@@ -125,11 +125,9 @@ article .container > ul:not(.features) > li + li,
 article .container > ol > li + li {
   margin-top: 1rem;
 }
-
 article .container * + h2 {
   margin-top: 4rem;
 }
-
 article .container * + h3 {
   margin-top: 2rem;
 }
@@ -151,22 +149,18 @@ blockquote {
   margin: 3rem 0;
   color: var(--color-primary);
 }
-
 blockquote > * {
   grid-area: blockquote;
 }
-
 blockquote p {
   position: relative;
   font-size: var(--font-size-h4);
   margin-bottom: 0;
   padding: 0.5em;
 }
-
 blockquote p strong {
   font-size: 1.15em;
 }
-
 blockquote::before {
   position: absolute;
   top: 0;
@@ -178,7 +172,6 @@ blockquote::before {
   transform: scale(1.1);
   content: "";
 }
-
 blockquote::after {
   grid-area: blockquote;
   color: #6f6ffd;
@@ -192,12 +185,12 @@ blockquote::after {
   transform: translate(25%, 50%) rotate(-5deg);
   transform-origin: bottom right;
 }
-
 @media (max-width: 60rem) {
   blockquote::after {
     transform: translate(25%, 55%) rotate(-5deg);
   }
 }
+
 #guidelines p:nth-of-type(1),
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
@@ -214,11 +207,9 @@ main {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-
 main:focus {
   outline: none;
 }
-
 main h3 {
   color: var(--color-primary);
 }
@@ -265,7 +256,6 @@ article,
   font-size: 1.125rem;
   overflow: hidden;
 }
-
 .skip-link:focus {
   position: fixed;
   top: 0;
@@ -295,14 +285,12 @@ article,
   text-align: center;
   text-decoration: none;
 }
-
 [class^=link]:not(.link-codepen):hover, [class^=link]:not(.link-codepen):focus,
 .profile .container > a:hover,
 .profile .container > a:focus {
   transform: translate(-0.15em, -0.15em);
   box-shadow: 0.3em 0.3em var(--color-secondary);
 }
-
 [class^=link]:not(.link-codepen):focus,
 .profile .container > a:focus {
   outline-color: transparent;
@@ -321,7 +309,6 @@ article,
   margin-top: 3rem;
   font-size: var(--font-size-h4);
 }
-
 .link-codepen::before {
   position: absolute;
   padding-right: 1.25em;
@@ -338,12 +325,12 @@ article,
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
-
 @media (max-width: 400px) {
   .link-allstyles {
     margin-left: 6rem;
   }
 }
+
 .link-github svg {
   width: 1em;
   height: 1em;
