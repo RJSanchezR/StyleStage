@@ -331,6 +331,9 @@ article,
   }
 }
 
+.link-github {
+  width: 50px;
+}
 .link-github svg {
   width: 1em;
   height: 1em;
