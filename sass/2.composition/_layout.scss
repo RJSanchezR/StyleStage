@@ -3,6 +3,10 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
 }
 
 main {
@@ -51,4 +55,116 @@ article,
   padding: 0;
   grid-gap: 1em;
   list-style: none;
+}
+
+// Header
+
+header div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../img/Mobile-Marquee.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-width: 550px) {
+    background-image: url('../img/Marquee-Sign.svg');
+  }
+}
+
+// Nav
+
+nav {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid var(--color-primary-alt);
+  background-color: transparent;
+  padding: 32px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.profile {
+  div.container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid var(--color-primary-alt);
+    background-color: transparent;
+    padding: 32px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Block Quote
+
+blockquote {
+  background-color: var(--color-secondary);
+  padding: 32px;
+}
+
+// Marquis on List
+
+section.container {
+  ul {
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/Lightbox-Small.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    @media (min-width: 550px) {
+      background-image: url('../img/Lightbox-Medium.svg');
+    }
+
+    li {
+      width: fit-content;
+    }
+  }
+}
+
+// Marquis on Links
+aside#styles div.container {
+  ul {
+    li {
+      width: 100%;
+      background-image: url('../img/Lightbox-Medium.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+
+      @media (min-width: 550px) {
+        background-image: url('../img/Lightbox-Medium.svg');
+      }
+    }
+  }
 }
