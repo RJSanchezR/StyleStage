@@ -3,13 +3,12 @@
 // $color-secondary: #d42257 !default;
 // $color-background: #d2fbf7 !default;
 
-//Retro Movie Color Palette 
-$color-primary: #7EAE86;
-$color-primary-alt: #BF332B;
-$color-secondary: #EEC96A;
-$color-tertiary: #1F4B63;
-$color-background: #F6F4EA;
-
+//Retro Movie Color Palette
+$color-primary: #7eae86;
+$color-primary-alt: #bf332b;
+$color-secondary: #eec96a;
+$color-tertiary: #1f4b63;
+$color-background: #f6f4ea;
 
 $brand-colors: (
   primary: $color-primary,
@@ -38,7 +37,7 @@ $colors: map-merge(
 }
 
 @function svgColor($color) {
-  @return "%23" + str-slice("#{color($color)}", 2, -1);
+  @return '%23' + str-slice('#{color($color)}', 2, -1);
 }
 
 $link-color: color(primary) !default;
@@ -51,12 +50,21 @@ $font-size-h3: 2rem !default;
 $font-size-h4: 1.35rem !default;
 $font-size-text: 1.15rem !default;
 
+$step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.8rem);
+$step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1rem) !default;
+$step-0: clamp(1rem, calc(0.91rem + 0.43vw), 1.25rem) !default;
+$step-1: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem) !default;
+$step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem) !default;
+$step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+$step-4: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+$step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+
 $font-sizes: (
-  h1: $font-size-h1,
-  h2: $font-size-h2,
-  h3: $font-size-h3,
-  h4: $font-size-h4,
-  text: $font-size-text,
+  h1: $step-2,
+  h2: $step-1,
+  h3: $step-1,
+  h4: $step-1,
+  text: $step-0,
 );
 
 // stylelint-disable
@@ -66,8 +74,8 @@ $font-sizes: (
   }
 
   --color-anchor: #{$link-color};
-  --font-family-headings: "Spectral", sans-serif;
-  --font-family: "Lato", sans-serif;
+  --font-family-headings: 'Spectral', sans-serif;
+  --font-family: 'Lato', sans-serif;
   --font-weight-strong: #{$font-weight-strong};
 
   @each $key, $size in $font-sizes {
