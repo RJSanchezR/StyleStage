@@ -68,24 +68,21 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 100%;
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../img/Marquee-Sign.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-  }
+  // background-image: url('../img/Mobile-Marquee.svg');
+  padding: 10px;
+  border: 20px solid red;
+  border-image-source: url('../img/Lightbox-Square.svg');
+  border-image-slice: 20 22;
+  border-image-repeat: round;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   @media (min-width: 550px) {
-    // background-image: url('../img/Marquee-Sign.svg');
+    border: 20px solid red;
+    border-image-source: url('../img/Lightbox-Medium.svg');
+    border-image-slice: 20 22;
+    border-image-repeat: round;
   }
 }
 
