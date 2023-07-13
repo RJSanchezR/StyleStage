@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ecc76a;
+      }
+
+      .cls-2 {
+        fill: #bd332b;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="m187.36,28.64v158.72H28.64V28.64h158.72M216,0H0v216h216V0h0Z"/>
+      <circle class="cls-1" cx="14.4" cy="13.99" r="8.27"/>
+      <circle class="cls-1" cx="14.4" cy="109.56" r="8.27"/>
+      <circle class="cls-1" cx="14.4" cy="202.55" r="8.27"/>
+      <circle class="cls-1" cx="202.96" cy="13.99" r="8.27"/>
+      <circle class="cls-1" cx="202.96" cy="109.56" r="8.27"/>
+      <circle class="cls-1" cx="202.96" cy="202.55" r="8.27"/>
+      <circle class="cls-1" cx="107.39" cy="202.55" r="8.27"/>
+      <circle class="cls-1" cx="107.39" cy="13.99" r="8.27"/>
+    </g>
+  </g>
+</svg>
