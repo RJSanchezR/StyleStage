@@ -4,11 +4,21 @@ body {
   color: var(--color-text);
   font-family: var(--font-family);
   display: flex;
+  background-image: url('../img/background-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 32px;
+
+  @media (min-width: 1040px) {
+    background-image: url('../img/longer.svg');
+    background-position: center;
+    background-size: contain;
+  }
 }
 
 main {
