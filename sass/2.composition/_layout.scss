@@ -69,9 +69,9 @@ header {
   justify-content: center;
   text-align: center;
   // background-image: url('../img/Mobile-Marquee.svg');
-  padding: 10px;
+  // padding: 10px;
   border: 20px solid red;
-  border-image-source: url('../img/Lightbox-Square.svg');
+  border-image-source: url('../img/3x3 really small.svg');
   border-image-slice: 20 22;
   border-image-repeat: round;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ header {
 
   @media (min-width: 550px) {
     border: 20px solid red;
-    border-image-source: url('../img/Lightbox-Medium.svg');
+    border-image-source: url('../img/3x3 really small.svg');
     border-image-slice: 20 22;
     border-image-repeat: round;
   }
