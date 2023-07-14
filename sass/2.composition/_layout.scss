@@ -78,20 +78,25 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: white;
   // background-image: url('../img/Mobile-Marquee.svg');
-  // padding: 10px;
-  border: 20px solid red;
+  padding: 10px;
+  border: 50px solid red;
   border-image-source: url('../img/3x3 really small.svg');
-  border-image-slice: 20 22;
+  border-image-slice: 33% 33%;
   border-image-repeat: round;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
+
+  & h2 {
+    background-image: none;
+  }
 
   @media (min-width: 550px) {
-    border: 20px solid red;
+    border: 50px solid red;
     border-image-source: url('../img/3x3 really small.svg');
-    border-image-slice: 20 22;
+    border-image-slice: 33% 33%;
     border-image-repeat: round;
   }
 }
