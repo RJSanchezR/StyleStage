@@ -274,19 +274,46 @@ header {
   background-color: white;
   padding: 10px;
   border: 50px solid red;
-  border-image-source: url("../img/3x3 really small.svg");
+  border-image-source: url("../img/3x3 really small2.svg");
   border-image-slice: 33% 33%;
   border-image-repeat: round;
+  animation: light 5s linear infinite;
 }
 header h2 {
   background-image: none;
 }
 @media (min-width: 550px) {
   header {
-    border: 50px solid red;
-    border-image-source: url("../img/3x3 really small.svg");
+    border: 100px solid red;
+    border-image-source: url("../img/3x3 really small2.svg");
     border-image-slice: 33% 33%;
     border-image-repeat: round;
+  }
+}
+@keyframes light {
+  0% {
+    border-image-source: url("../img/3x3 really small2.svg");
+  }
+  15% {
+    border-image-source: url("../img/3x3 lights.svg");
+  }
+  30% {
+    border-image-source: url("../img/3x3 really small2.svg");
+  }
+  45% {
+    border-image-source: url("../img/3x3 lights.svg");
+  }
+  60% {
+    border-image-source: url("../img/3x3 really small2.svg");
+  }
+  75% {
+    border-image-source: url("../img/3x3 lights.svg");
+  }
+  90% {
+    border-image-source: url("../img/3x3 really small2.svg");
+  }
+  100% {
+    border-image-source: url("../img/3x3 lights.svg");
   }
 }
 
