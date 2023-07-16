@@ -1,7 +1,37 @@
+
+@mixin marquee() {
+  background-image: 
+  linear-gradient(
+    to right,    rgb(0 0 0 / 0%), 
+    transparent, rgb(0 0 0 / 0%)
+  ),
+  linear-gradient(
+    to right, transparent,
+    transparent 12.5%, black 12.5%, transparent 12.7%,
+    transparent 25.0%, black 25.0%, transparent 25.2%, 
+    transparent 37.5%, black 37.5%, transparent 37.7%,
+    transparent 50.0%, black 50.0%, transparent 50.2%,
+    transparent 62.5%, black 62.5%, transparent 62.7%,
+    transparent 75.0%, black 75.0%, transparent 75.2%,
+    transparent 87.5%, black 87.5%, transparent 87.7%
+  ),
+  linear-gradient(
+    to bottom, white, 
+    white 25%, black 25%, white 25.5%, 
+    white 75%, black 75%, white 75.5%
+  );
+  border: 50px solid red;
+  border-image-source: url('../img/3x3 really small2.svg');
+  border-image-slice: 33% 33%;
+  border-image-repeat: round;
+  animation: light 5s linear infinite;
+  color: black;
+}
+
 // stylelint-disable no-descending-specificity
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: darkred;
+  color: white;
   font-family: var(--font-family);
   display: flex;
   background-image: url('../img/background-mobile.svg');
@@ -79,37 +109,7 @@ header {
   justify-content: center;
   text-align: center;
   color: black;
-  // background-color: white;
-  // background-image: url('../img/Mobile-Marquee.svg');
-    background-image: 
-    linear-gradient(
-      to right,    rgb(0 0 0 / 0%), 
-      transparent, rgb(0 0 0 / 0%)
-    ),
-    linear-gradient(
-      to right, transparent,
-      transparent 12.5%, black 12.5%, transparent 12.6%,
-      transparent 25.0%, black 25.0%, transparent 25.2%, 
-      transparent 37.5%, black 37.5%, transparent 37.6%,
-      transparent 50.0%, black 50.0%, transparent 50.2%,
-      transparent 62.5%, black 62.5%, transparent 62.6%,
-      transparent 75.0%, black 75.0%, transparent 75.2%,
-      transparent 87.5%, black 87.5%, transparent 87.6%
-    ),
-    linear-gradient(
-      to bottom, white, 
-      white 25%, black 25%, white 26%, 
-      white 75%, black 75%, white 76%
-    );
-  // padding: 10px;
-  border: 50px solid red;
-  border-image-source: url('../img/3x3 really small2.svg');
-  border-image-slice: 33% 33%;
-  border-image-repeat: round;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: contain;
-  animation: light 5s linear infinite;
+  @include marquee();
 
   & h1 {
     text-transform: uppercase;
@@ -295,10 +295,11 @@ section.container {
   text-align: center;
   width: 300px;
   height: 200px;
-  background-image: url('../img/Lightbox-Medium.svg');
-  background-repeat: no-repeat;
-  // background-position: center;
-  background-size: 100% 100%;
+  @include marquee();
+  // background-image: url('../img/Lightbox-Medium.svg');
+  // background-repeat: no-repeat;
+  // // background-position: center;
+  // background-size: 100% 100%;
 
   span {
     display: block;
