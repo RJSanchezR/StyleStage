@@ -30,8 +30,8 @@
 
 // stylelint-disable no-descending-specificity
 body {
-  background-color: darkred;
-  color: white;
+  background-color: var(--color-background);
+  color: var(--color-primary);
   font-family: var(--font-family);
   display: flex;
   background-image: url('../img/background-mobile.svg');
@@ -72,6 +72,7 @@ article {
     align-items: flex-start;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    background-color: rgba(94, 94, 94, 0);
   }
 }
 
