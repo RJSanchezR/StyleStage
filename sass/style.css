@@ -102,7 +102,7 @@ h2 {
 
 #main h2 {
   align-self: center;
-  color: var(--color-background);
+  color: var(--color-primary);
   padding: 0.25em 0.5em;
 }
 
@@ -331,6 +331,7 @@ nav {
   border: 5px solid var(--color-primary-alt);
   background-color: transparent;
   padding: 32px;
+  margin-top: 10vh;
 }
 nav ul {
   list-style-type: none;
